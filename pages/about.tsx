@@ -24,7 +24,7 @@ export default function Home() {
         Generate social media sharing links in a snap.
       </p>{" "}
       <br />
-      <Header>What does this tool do?</Header>
+      <Header>What does this tool do..?</Header>
       <p className="text-xl space-y-2">
         <div>Instead of writing a URL like these:</div>
         <Code>
