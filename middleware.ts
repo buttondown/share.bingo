@@ -14,6 +14,7 @@ export function middleware(request: NextRequest) {
       return Response.redirect(redirectUrl);
     }
   }
+  return Response.redirect("/foo");
 }
 
 // See "Matching Paths" below to learn more
