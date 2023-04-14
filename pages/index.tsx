@@ -67,7 +67,7 @@ export default function Home() {
         .
       </p>
       <div className="flex-1"></div>
-      <p className="text-sm text-center">
+      <p className="text-sm text-center mt-8">
         Brought to you by the same folks who build{" "}
         <a href="https://buttondown.email" className="text-blue-500 underline">
           Buttondown
