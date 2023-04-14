@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div
       className={
-        "  text-lg py-8 max-w-prose mx-auto flex flex-col min-h-screen"
+        "  text-lg py-8 max-w-prose mx-4 lg:mx-auto flex flex-col min-h-screen"
       }
     >
       <h1 className="text-6xl font-black mb-2 uppercase text-center">
@@ -45,7 +45,7 @@ export default function Home() {
         is the &apos;real&apos; one versus the deprecated one.
       </p>
       <Header>What networks do you support?</Header>
-      <div className="grid grid-cols-6 gap-4">
+      <div className="grid grid-cols-3 lg:grid-cols-6 gap-4">
         {rules.map((rule) => (
           <div
             key={rule.name}
