@@ -58,7 +58,10 @@ export default function Home() {
       <Header>Any weird tracking stuff going on?</Header>
       <p>
         Nope, but no need to take my word for it. Check out the{" "}
-        <a href="#" className="text-blue-500">
+        <a
+          href="https://github.com/buttondown-email/share.bingo"
+          className="text-blue-500"
+        >
           source code
         </a>
         .

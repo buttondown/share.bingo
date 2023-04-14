@@ -47,7 +47,7 @@ export const rules: Rule[] = [
       `https://social-plugins.line.me/lineit/share?url=${url}`,
   },
   {
-    name: "hacker news",
+    name: "hn",
     render: (url, text) =>
       `https://news.ycombinator.com/submitlink?u=${url}&t=${text}`,
   },
