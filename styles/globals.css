@@ -16,12 +16,10 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "HexFranklin";
+  src: url("https://d33wubrfki0l68.cloudfront.net/409516e806160febfc4d1d7902107ae378404d3f/fd4dc/fonts/hex-franklin/hex-franklin-0.2.woff2")
+    format("woff2");
+  font-weight: 1 999;
+  font-stretch: 0% 100%;
 }
