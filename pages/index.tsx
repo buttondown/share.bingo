@@ -26,7 +26,7 @@ export default function Home() {
       <br />
       <Header>What does this tool do?</Header>
       <p className="text-xl space-y-2">
-        <div>Instead of writing a URL like these:</div>
+        <span>Instead of writing a URL like these:</span>
         <Code>
           https://twitter.com/intent/tweet?text=Hello%20World&url=https%3A%2F%2Fshare.bingo
         </Code>
