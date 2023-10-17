@@ -14,7 +14,7 @@ export function middleware(request: NextRequest) {
       return new Response(null, {
         status: 302,
         headers: {
-          "Content-Location": "",
+          "Content-Location": redirectUrl,
           Location: redirectUrl,
         },
       });
