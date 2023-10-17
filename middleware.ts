@@ -11,7 +11,12 @@ export function middleware(request: NextRequest) {
   for (const rule of rules) {
     if (request.nextUrl.pathname.startsWith(`/${rule.name}`)) {
       const redirectUrl = rule.render(url || "", text || "");
-      return Response.redirect(redirectUrl);
+      return new Response(null, {
+        status: 302,
+        headers: {
+          Location: redirectUrl,
+        },
+      });
     }
   }
 }
