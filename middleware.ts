@@ -8,6 +8,7 @@ export function middleware(request: NextRequest) {
   const text = searchParams.get("text");
 
   for (const rule of rules) {
+    if (rule.name === "email") continue;
     if (request.nextUrl.pathname.startsWith(`/${rule.name}`)) {
       const redirectUrl = rule.render(url || "", text || "");
       return new Response(null, {
