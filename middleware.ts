@@ -2,7 +2,6 @@
 import type { NextRequest } from "next/server";
 import { rules } from "./lib/rules";
 
-// This function can be marked `async` if using `await` inside
 export function middleware(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const url = searchParams.get("url");
@@ -22,7 +21,6 @@ export function middleware(request: NextRequest) {
   }
 }
 
-// See "Matching Paths" below to learn more
 export const config = {
   matcher: "/:path*",
 };
