@@ -22,7 +22,7 @@ export function getStaticProps({ params }: { params: { network: string } }) {
   };
 }
 
-export default function MarkdownIntegration(props: { network: string }) {
+export default function Page(props: { network: string }) {
   useEffect(() => {
     const { searchParams } = new URL(window.document.location.href);
     const url = searchParams.get("url") || "";
@@ -37,7 +37,7 @@ export default function MarkdownIntegration(props: { network: string }) {
         "  text-lg py-8 max-w-prose mx-4 lg:mx-auto flex flex-col min-h-screen text-center"
       }
     >
-      Feel free to close this tab.
+      <div className="my-auto">Feel free to close this tab.</div>
     </div>
   );
 }
