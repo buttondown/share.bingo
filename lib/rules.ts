@@ -60,4 +60,8 @@ export const rules: Rule[] = [
     name: "vk",
     render: (url, text) => `https://vk.com/share.php?url=${url}&title=${text}`,
   },
+  {
+    name: "mastodon",
+    render: (url, text) => `https://toot.kytta.dev/?text=${text}%0A%0A${url}`,
+  },
 ];
