@@ -64,4 +64,9 @@ export const rules: Rule[] = [
     name: "mastodon",
     render: (url, text) => `https://toot.kytta.dev/?text=${text}%0A%0A${url}`,
   },
+  {
+    name: "bluesky",
+    render: (url, text) =>
+      `https://bsky.app/intent/compose?text=${text}%0A%0A${url}`,
+  },
 ];
