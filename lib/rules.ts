@@ -65,6 +65,11 @@ export const rules: Rule[] = [
     render: (url, text) => `https://toot.kytta.dev/?text=${text}%0A%0A${url}`,
   },
   {
+    name: "threads",
+    render: (url, text) =>
+      `https://www.threads.net/intent/post?url=${url}&text=${text}`,
+  },
+  {
     name: "bluesky",
     render: (url, text) =>
       `https://bsky.app/intent/compose?text=${text}%0A%0A${url}`,
